@@ -5,3 +5,7 @@ let sub : number | string ='1'
 let apiRequestStatus :'pending' |'sucess' |'error' ='pending'
 
 apiRequestStatus = "sucess"
+
+let airlineSeat :'aisle' |'window' | 'middle' ='middle'
+
+airlineSeat='aisle'
