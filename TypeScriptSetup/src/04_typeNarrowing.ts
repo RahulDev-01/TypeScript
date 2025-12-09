@@ -74,3 +74,19 @@ type ElderflowerChai ={
     type : "elderflower"
     floralNote : number
 }
+
+type ChaiTypes = MasalaChai | GreenChai | ElderflowerChai;
+function prepareChai(chai: ChaiTypes){      
+    switch(chai.type){
+        case "masala":
+            return `Preparing masala chai with spice level ${chai.spiceLevel}`;
+        case "green":
+            return `Preparing green chai with flavor level ${chai.flavor}`;
+        case "elderflower":
+            return `Preparing elderflower chai with floral note ${chai.floralNote}`;
+    }   
+}
+
+// Example usages:
+console.log(getChai("ginger"));
+console.log(getChai(2));
