@@ -90,3 +90,10 @@ function prepareChai(chai: ChaiTypes){
 // Example usages:
 console.log(getChai("ginger"));
 console.log(getChai(2));
+
+function brew(order:MasalaChai | GreenChai){
+    if("spiceLevel" in order){
+        return `Brewing masala chai with spice level ${order.spiceLevel}`;
+    }   
+    return `Brewing green chai with flavor level ${order.flavor}`;
+}
