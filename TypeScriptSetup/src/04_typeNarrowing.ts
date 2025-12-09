@@ -36,5 +36,16 @@ class CuttingChai{
 }
 
 function serve(chai : KulhadChai | CuttingChai){
-    if()
+    if(chai instanceof KulhadChai){
+        return chai.serve();
+    }
+}
+
+type ChaiOrder ={
+    type :string
+    sugar:number
+}
+
+function isChaiOrder(obj:any):obj is ChaiOrder{
+    
 }
