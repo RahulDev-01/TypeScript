@@ -4,3 +4,7 @@ if(typeof kind =='string'){
 }
 return `Chai order : ${kind}`;
 }
+
+function serveChai(msg?: string){
+    
+}
