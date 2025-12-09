@@ -61,3 +61,16 @@ function serveOrder(item:ChaiOrder | string){
     }
     return `Serving default chai : ${item}`       
 }
+
+type MasalaChai ={
+    type : "masala"
+    spiceLevel : number
+}
+type GreenChai ={
+    type : "green"
+    flavor : number
+}   
+type ElderflowerChai ={
+    type : "elderflower"
+    floralNote : number
+}
