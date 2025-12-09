@@ -35,4 +35,6 @@ class CuttingChai{
     }
 }
 
-function serve()
+function serve(chai : KulhadChai | CuttingChai){
+    if()
+}
