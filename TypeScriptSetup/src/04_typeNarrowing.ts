@@ -62,6 +62,18 @@ function serveOrder(item:ChaiOrder | string){
     return `Serving default chai : ${item}`       
 }
 
+// Type Narrowing with Discriminated Unions
+// Defination : A discriminated union is a union type that uses a common property to differentiate between different types within the union.
+// This common property is known as the "discriminant" or "tag".
+// By checking the value of the discriminant, TypeScript can narrow down the type of the variable to a specific member of the union.
+// This allows for more precise type checking and safer code when working with union types.
+// Example:
+// Defining the types with a common discriminant property 'type'
+// Using Discriminated Unions to narrow down types
+//  Defining the types with a common discriminant property 'type'
+// Using Discriminated Unions to narrow down types
+
+
 type MasalaChai ={
     type : "masala"
     spiceLevel : number
@@ -96,4 +108,10 @@ function brew(order:MasalaChai | GreenChai){
         return `Brewing masala chai with spice level ${order.spiceLevel}`;
     }   
     return `Brewing green chai with flavor level ${order.flavor}`;
+}
+
+// Unknown : 
+
+function isStringArray(arr:unknown) : arr is string[]{
+    return Array.isArray(arr) && arr.every(item => typeof item === 'string');
 }
