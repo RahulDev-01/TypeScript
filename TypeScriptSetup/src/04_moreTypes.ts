@@ -15,7 +15,10 @@ let bookObject =JSON.parse(bookString) as book
 
 console.log(bookObject);
 
-// Type Assertion : 
+// Type Assertion : It is used to tell the compiler about the type of a variable
+
+// DOM Manipulation
+
 const inputElement = document.getElementById("username") as HTMLInputElement
 
 let value: any 
@@ -54,9 +57,14 @@ try {
 
 const data:unknown ="Chai aur unkown"
 // As : Forcefully accept data
+// 
 const strData :string = data as string
 
-// Never
+// Never : Function that never returns a value
+    // Examples : Function that throws an error or infinite loop
+
+// Role type
+
 
 type Role = 'admin'| "user" |"superAdmin" 
 // void : I don't Care about the block of code
