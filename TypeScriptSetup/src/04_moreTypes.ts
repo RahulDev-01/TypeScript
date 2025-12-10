@@ -58,7 +58,7 @@ const strData :string = data as string
 
 // Never
 
-type Role = 'admin'| "user" |"superAdmin"
+type Role = 'admin'| "user" |"superAdmin" 
 // void : I don't Care about the block of code
 function redirectBasedOnRole(role:Role):void{
     if(role==="admin"){
@@ -72,4 +72,10 @@ function redirectBasedOnRole(role:Role):void{
     }
     role;
 
+}
+// Never 
+function neverReturn():never{
+    while(true){
+
+    }
 }
