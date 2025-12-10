@@ -50,3 +50,26 @@ try {
     
     
 }
+
+
+const data:unknown ="Chai aur unkown"
+// As : Forcefully accept data
+const strData :string = data as string
+
+// Never
+
+type Role = 'admin'| "user" |"superAdmin"
+// void : I don't Care about the block of code
+function redirectBasedOnRole(role:Role):void{
+    if(role==="admin"){
+        console.log("Redirecting to Admin Dashboard");
+        return 
+    }
+    if(role==="user"){
+        console.log("Redirecting to user dashboard");
+        return
+        
+    }
+    role;
+
+}
