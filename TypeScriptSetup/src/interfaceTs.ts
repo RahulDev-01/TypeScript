@@ -82,3 +82,6 @@ const config:Config={
     appName:"ChaiApp",
     version:1.0
 }
+
+config.version=1.1
+// config.appName="NewChaiApp" // Error : Cannot assign to 'appName' because it is a read-only property.
