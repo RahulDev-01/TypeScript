@@ -15,3 +15,13 @@ function serveChai(order:chaiOrder){
     console.log(order);
     
 }
+
+type TeaRecipe ={
+    water:number;
+    milk:number;
+}
+
+class MasalaChai implements TeaRecipe {
+    water=100;
+    milk=50;
+}
