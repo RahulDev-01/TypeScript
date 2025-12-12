@@ -1,10 +1,17 @@
-function makeChai(order:{typr:string; sugar:number;strong:boolean}){
+type chaiOrder={
+
+    type:string;
+    sugar:number;strong:boolean
+    
+    }
+
+function makeChai(order:{type:string; sugar:number;strong:boolean}){
     console.log(order);
     
 }
 
 
-function serveChai(order:{type:string;sugar:number;strong:boolean}){
+function serveChai(order:chaiOrder){
     console.log(order);
     
 }
